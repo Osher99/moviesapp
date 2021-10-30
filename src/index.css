@@ -22,6 +22,9 @@ header {
   padding-bottom: 15px;
   text-align: center;
   justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   /* display: flex; */
 }
 
@@ -41,7 +44,7 @@ header h2 .appAuther {
   padding: 0.5rem 1.5rem;
   color: white;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .movie-container {
@@ -58,7 +61,7 @@ header h2 .appAuther {
 }
 .movie {
   background-color: #373b69;
-  margin: 1rem;
+  margin: 0.5rem;
   width: 250px;
   border-radius: 3px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
