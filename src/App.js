@@ -28,8 +28,9 @@ function App() {
   return (
     <>
     <header>
-      <h2>Current Movies</h2>
+      <h2>Current Movies&nbsp;&nbsp;
       <span className="appAuther">By Osher Dror</span>
+      </h2>
       <form>
       <input className="search" type="search" placeholder="Search..." onChange={handleOnChange}/>
         </form>
@@ -42,11 +43,5 @@ function App() {
     </>
   );
 }
-// redux providing state takeover
-const mapStateToProps = (state) => {
-  console.log("App State ->", state);
-  return {
-    movies: state.movies.movies
-  }
-}
-export default connect(mapStateToProps, { getMovies })(App)
+
+export default App;
