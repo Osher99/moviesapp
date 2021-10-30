@@ -1,6 +1,6 @@
 import './App.css';
 import Movie from './containers/Movie';
-import { useDispatch, useSelector, connect } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { getMovies } from './actions';
 import React, { useEffect, useState } from 'react';
 import _ from 'underscore';
