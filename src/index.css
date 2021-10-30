@@ -18,9 +18,11 @@ box-sizing: border-box;
 
 header {
   background-color: #373b69;
-  padding: 1rem;
+  padding: 0rem;
+  padding-bottom: 15px;
+  text-align: center;
   justify-content: space-around;
-  display: flex;
+  /* display: flex; */
 }
 
 header h2 .appAuther {

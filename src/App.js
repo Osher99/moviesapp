@@ -28,7 +28,7 @@ function App() {
   return (
     <>
     <header>
-      <h2>Current Movies&nbsp;&nbsp;
+      <h2>Movies Database&nbsp;&nbsp;
       <span className="appAuther">By Osher Dror</span>
       </h2>
       <form>
