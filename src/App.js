@@ -25,13 +25,17 @@ function App() {
     setMoviesState(movies);
   }
 
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+  }
+
   return (
     <>
     <header>
       <h2>Movies Database&nbsp;&nbsp;
       <span className="appAuther">By Osher Dror</span>
       </h2>
-      <form>
+      <form onSubmit={handleOnSubmit}>
       <input className="search" type="search" placeholder="Search..." onChange={handleOnChange}/>
         </form>
     </header>
