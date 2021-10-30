@@ -50,6 +50,12 @@ header h2 .appAuther {
   justify-content: center;
 }
 
+@media screen and (max-width: 415px){
+  .movie {
+    width: 100px!important;
+     height: 100%!important;
+  }
+}
 .movie {
   background-color: #373b69;
   margin: 1rem;
@@ -59,6 +65,14 @@ header h2 .appAuther {
   overflow: hidden;
   position: relative;
 }
+
+@media screen and (max-width: 415px){
+
+.movie img {
+  height: 165px!important;
+}
+}
+
 .movie img {
   width: 100%;
   object-fit: cover;
@@ -71,7 +85,17 @@ header h2 .appAuther {
   justify-content: space-between;
   padding: 1rem;
   font-size: 12px;
+  
 }
+
+@media screen and (max-width: 415px){
+.movie-info {
+height: 50px!important;
+    padding: 0.5rem!important;
+    font-size: 6px!important;
+  }
+}
+
 
 .movie-info h3 {
   margin: 0;
@@ -92,9 +116,15 @@ transform: translateY(102%);
 transition: transform 0.3s ease-in-out;
 overflow: auto;
 max-height: 100%;
+object-fit: cover;
+}
+@media screen and (max-width: 415px){
+.movie-over { 
+  font-size: 7px!important;
+}
 }
 
-.movie:hover .movie-over {
+  .movie:hover .movie-over {
   transform: translateY(0%);
 }
 
