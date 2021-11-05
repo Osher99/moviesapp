@@ -6,17 +6,20 @@ const setVoteAverageClass = (vote) => {
         return "green";
     } else if (vote >= 6) {
         return "orange";
-    } else {
+    } else if (vote === 0) {
+        return "na";
+    } 
+    else {
         return "red";
     }
 }
 
-const Movie = ({ title, poster_path, overview, vote_average}) =>(
+const Movie = ({ title, poster_path, overview, vote_average }) =>(
     <div className="movie">
         <img src={poster_path ? IMGPATH + poster_path : BLANKIMGPATH} alt={title} />
         <div className="movie-info">
         <h2>{title}</h2>
-        <span className={`tag ${setVoteAverageClass(vote_average)}`}>{vote_average}</span>
+        <span className={`tag ${setVoteAverageClass(vote_average)}`}>{vote_average === 0 ? 'N/A' : vote_average}</span>
         </div>
         <div className="movie-over">
             <h2>Overview:</h2>

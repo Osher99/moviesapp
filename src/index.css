@@ -149,3 +149,7 @@ color:rgb(7, 245, 7);
 .tag.red{
   color: rgb(247, 0, 0);
 }
+
+.tag.na {
+  color: rgb(93, 250, 255)
+}
