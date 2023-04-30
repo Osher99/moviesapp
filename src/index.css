@@ -81,7 +81,7 @@ header h2 .appAuther {
 
 .movie .poster {
   width: 100%;
-  object-fit: unset;
+  object-fit: cover;
   height: 458px;
 }
 
@@ -111,13 +111,33 @@ header h2 .appAuther {
 }
 
 @media screen and (max-width: 415px){
+  .movie  {
+    margin: 0.5rem;
+    width: 350px;
+    border-radius: 10px;
+  }
+
 .movie-info {
     height: 50px!important;
     padding: 0.5rem!important;
     font-size: 6px!important;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .movie-over { 
+    font-size: 7px!important;
+  }
+  .movie .imdb-a {
+    width: 25px;
+    max-height: 20px;
+  }
+  .movie .yts-a {
+    width: 50px;
+    max-height: 15px;
   }
 }
-
 
 .movie-info h3 {
   margin: 0;
@@ -140,11 +160,7 @@ overflow: auto;
 max-height: 100%;
 object-fit: cover;
 }
-@media screen and (max-width: 415px){
-.movie-over { 
-  font-size: 7px!important;
-}
-}
+
 
   .movie:hover .movie-over {
   transform: translateY(0%);
