@@ -16,7 +16,7 @@ const Movie = ({ title, poster_path, overview, vote_average }) => {
         </div>
         <div className="movie-over">
             <h2>Overview:</h2>
-            <p>{overview}</p>
+            <p className="overview">{overview}</p>
             <div className='link-imgs'>
                 <a className="imdb-a" target="_blank" rel="noopener noreferrer" href={`${IMDB_SEARCH}${title}`}><img className="imdb-a" src={IMDB} alt="imdb" /></a>
                 <a className="yts-a" target="_blank" rel="noopener noreferrer" href={`${YTS_MX_SEARCH}${title}`}><img className="yts-a" src={Y2S} alt="y2s" /></a>

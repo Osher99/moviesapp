@@ -137,6 +137,10 @@ header h2 .appAuther {
     width: 50px;
     max-height: 15px;
   }
+  .overview {
+    overflow: scroll;
+    max-height: 75px;
+  }
 }
 
 .movie-info h3 {
