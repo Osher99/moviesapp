@@ -3,8 +3,9 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #22254b;
-  color: white;
+  /*background-color: #22254b;*/
+  background:url('./assets/backgorund.jpg');
+  color: black;
 }
 
 * {
@@ -17,7 +18,7 @@ box-sizing: border-box;
 }
 
 header {
-  background-color: #373b69;
+  background: url('./assets/banner.jpg');
   padding: 0rem;
   padding-bottom: 15px;
   text-align: center;
@@ -25,7 +26,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  /* display: flex; */
+  color: black;
+  border-bottom: 3px solid black;
 }
 
 header h2 .appAuther {
@@ -37,12 +39,12 @@ header h2 .appAuther {
 
 .search {
   font-family: inherit;
-  border: 2px solid #22254b;
+  border: 2px solid black;
   border-radius: 50px;
-  background-color: transparent;
+  background-color: white;
   font-size: 1.2rem;
   padding: 0.5rem 1.5rem;
-  color: white;
+  color: black;
   text-align: center;
   margin-top: 5px;
 }
@@ -60,13 +62,14 @@ header h2 .appAuther {
   }
 }
 .movie {
-  background-color: #373b69;
-  margin: 0.5rem;
-  width: 250px;
-  border-radius: 3px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin: 2.5rem;
+  width: 350px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   position: relative;
+  color: black;
 }
 
 @media screen and (max-width: 415px){
@@ -76,24 +79,40 @@ header h2 .appAuther {
 }
 }
 
-.movie img {
+.movie .poster {
   width: 100%;
-  object-fit: cover;
-  height: 400px;
+  object-fit: unset;
+  height: 458px;
+}
+
+.movie .link-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.movie .imdb-a {
+  width: 45px;
+}
+.movie .yts-a {
+  width: 90px;
 }
 
 .movie-info {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
   padding: 1rem;
   font-size: 12px;
-  
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 415px){
 .movie-info {
-height: 50px!important;
+    height: 50px!important;
     padding: 0.5rem!important;
     font-size: 6px!important;
   }
@@ -132,7 +151,7 @@ object-fit: cover;
 }
 
 .tag {
-  background-color: #22254b;
+  background-color: black;
   border-radius: 5px;
   padding: 0.5rem;
   font-weight: bold;

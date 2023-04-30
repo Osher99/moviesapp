@@ -5,12 +5,12 @@ import { setMovies } from '../../actions';
 export function* handleGetMovies(action) {
      try {
          if (action.searchVal === ''){
-         const response = yield call(getMovies)
-         const { results  } = response;
-         yield put(setMovies(results));
+            const response = yield call(getMovies)
+            const { results } = response;
+            yield put(setMovies(results));
          } else {
             const response = yield call(getSearchMovies, action.searchVal)
-            const { results  } = response;
+            const { results } = response;
             yield put(setMovies(results));
          }
      } catch (e) {

@@ -9,7 +9,6 @@ export async function getMovies() {
     }
 }
 
-
 export async function getSearchMovies(searchVal) {
     try {
         const searchUrl = SEARCHAPI+searchVal;
